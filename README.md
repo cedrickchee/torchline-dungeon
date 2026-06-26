@@ -79,6 +79,7 @@ Start here:
 - [Architecture](docs/architecture.md)
 - [Gameplay Systems](docs/gameplay-systems.md)
 - [Asset Pipeline](docs/assets.md)
+  - [Image generation prompts](./docs/assets#image-generation-prompts)
 - [Testing](docs/testing.md)
 - [Contributing](CONTRIBUTING.md)
 
