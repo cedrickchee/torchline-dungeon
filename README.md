@@ -1,5 +1,7 @@
 # Dungeon Torch Crawler
 
+[](./docs/images/gameplay.png)
+
 Dungeon Torch Crawler is a fixed-camera torchlit action RPG (ARPG) vertical slice built with Bun, Vite, TypeScript, and Three.js.
 
 **Naming**
@@ -15,6 +17,13 @@ The project focuses on one polished proof: a dense gothic dungeon chamber with c
 Vertical slice.
 
 The runtime already includes a Three.js renderer, authored floor-one scene data, actor sprites, local audio, item affixes, elite monsters, shrines, local persistence, replay/debug state, and automated tests.
+
+## Updates
+
+You can follow me on X/Twitter for updates: [@cedric_chee](https://x.com/cedric_chee)
+
+- 2026-06-26:
+  - GLM-5.2 model evaluation (demo video): https://x.com/cedric_chee/status/2070223250035224908
 
 ## Quick Start
 
