@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="128" viewBox="0 0 512 128">
+  <defs>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.6"/></filter>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.8"/></filter>
+    <linearGradient id="slotMetal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6b5738"/><stop offset=".35" stop-color="#181714"/><stop offset="1" stop-color="#030303"/></linearGradient>
+    <radialGradient id="emberBloom"><stop stop-color="#fff2ba"/><stop offset=".28" stop-color="#f3a14b" stop-opacity=".62"/><stop offset="1" stop-color="#d55a28" stop-opacity="0"/></radialGradient>
+    
+  <linearGradient id="wallFace" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#554934"/><stop offset=".35" stop-color="#28251f"/><stop offset="1" stop-color="#090908"/></linearGradient>
+  <linearGradient id="wallTop" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#625239"/><stop offset=".52" stop-color="#28251f"/><stop offset="1" stop-color="#0b0b0a"/></linearGradient>
+  <linearGradient id="doorWood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6b3f24"/><stop offset=".55" stop-color="#30180d"/><stop offset="1" stop-color="#120805"/></linearGradient>
+  
+  </defs>
+  <rect width="512" height="128" fill="transparent"/>
+  <g transform="translate(0 0)"><rect x="6" y="16" width="116" height="106" fill="url(#wallFace)" stroke="#6f5634" stroke-width="2"/>
+       <path d="M12 27h101M16 49h94M10 72h108M17 96h88" stroke="#7e6848" opacity=".45"/>
+       <path d="M17 20l20 98M60 16l-8 109M100 18l-18 102" stroke="#050505" opacity=".32"/>
+       <path d="M94 14l-14 -7.5l8 5" stroke="#ccb27d" stroke-width="2" opacity="0.14" fill="none" stroke-linecap="round"/><path d="M117 33l-7 -2.5l4 6" stroke="#ccb27d" stroke-width="1" opacity="0.14" fill="none" stroke-linecap="round"/><path d="M22 52l0 2.5l0 7" stroke="#ccb27d" stroke-width="1" opacity="0.14" fill="none" stroke-linecap="round"/><path d="M45 71l7 7.5l8 8" stroke="#ccb27d" stroke-width="2" opacity="0.14" fill="none" stroke-linecap="round"/><path d="M68 90l14 -7.5l4 5" stroke="#ccb27d" stroke-width="1" opacity="0.14" fill="none" stroke-linecap="round"/><path d="M91 109l-14 -2.5l0 6" stroke="#ccb27d" stroke-width="1" opacity="0.14" fill="none" stroke-linecap="round"/><path d="M114 10l-7 2.5l8 7" stroke="#ccb27d" stroke-width="2" opacity="0.14" fill="none" stroke-linecap="round"/><path d="M19 29l0 7.5l4 8" stroke="#ccb27d" stroke-width="1" opacity="0.14" fill="none" stroke-linecap="round"/><path d="M42 48l7 -7.5l0 5" stroke="#ccb27d" stroke-width="1" opacity="0.14" fill="none" stroke-linecap="round"/><path d="M65 67l14 -2.5l8 6" stroke="#ccb27d" stroke-width="2" opacity="0.14" fill="none" stroke-linecap="round"/><path d="M88 86l-14 2.5l4 7" stroke="#ccb27d" stroke-width="1" opacity="0.14" fill="none" stroke-linecap="round"/><path d="M111 105l-7 7.5l0 8" stroke="#ccb27d" stroke-width="1" opacity="0.14" fill="none" stroke-linecap="round"/><path d="M16 6l0 -7.5l8 5" stroke="#ccb27d" stroke-width="2" opacity="0.14" fill="none" stroke-linecap="round"/>
+       <path d="M6 16h116v18H6z" fill="#57462e" opacity=".88"/>
+       <path d="M12 18h101" stroke="#d5a55b" opacity=".24"/></g><g transform="translate(128 0)"><path d="M8 29L64 6l56 23v54L64 121L8 83z" fill="url(#wallTop)" stroke="#947044" stroke-width="2"/>
+       <path d="M19 31h88M25 50h78M30 70h69M36 90h56" stroke="#c09a62" opacity=".28"/>
+       <path d="M64 6v115M8 83l112-54M8 29l112 54" stroke="#090909" opacity=".22"/></g><g transform="translate(256 0)"><ellipse cx="64" cy="105" rx="45" ry="12" fill="#000" opacity=".48"/>
+       <path d="M24 111V51C24 22 104 22 104 51v60z" fill="#20130c" stroke="#8f6035" stroke-width="5"/>
+       <path d="M33 109V53c0-20 62-20 62 0v56z" fill="url(#doorWood)" stroke="#1a0d07" stroke-width="2"/>
+       <path d="M43 45v64M64 35v74M85 45v64" stroke="#85552e" stroke-width="6" opacity=".72"/>
+       <path d="M32 68h64" stroke="#24100a" stroke-width="8" opacity=".55"/>
+       <circle cx="85" cy="77" r="5" fill="#f2c26b" stroke="#2a1709" stroke-width="2"/></g><g transform="translate(384 0)"><ellipse cx="64" cy="105" rx="45" ry="12" fill="#000" opacity=".48"/>
+       <path d="M24 111V51C24 22 104 22 104 51v60" fill="none" stroke="#8f6035" stroke-width="5"/>
+       <path d="M45 45l39 10v55l-39-10z" fill="url(#doorWood)" stroke="#b6743d" stroke-width="3"/>
+       <path d="M84 55v55" stroke="#211009" stroke-width="6"/>
+       <circle cx="73" cy="78" r="5" fill="#f2c26b"/>
+       <circle cx="63" cy="73" r="34" fill="url(#emberBloom)" opacity=".45"/></g>
+</svg>

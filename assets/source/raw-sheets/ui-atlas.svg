@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="128" viewBox="0 0 640 128">
+  <defs>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.6"/></filter>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.8"/></filter>
+    <linearGradient id="slotMetal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6b5738"/><stop offset=".35" stop-color="#181714"/><stop offset="1" stop-color="#030303"/></linearGradient>
+    <radialGradient id="emberBloom"><stop stop-color="#fff2ba"/><stop offset=".28" stop-color="#f3a14b" stop-opacity=".62"/><stop offset="1" stop-color="#d55a28" stop-opacity="0"/></radialGradient>
+    
+  </defs>
+  <rect width="640" height="128" fill="transparent"/>
+  <g transform="translate(0 0)"><rect x="9" y="9" width="110" height="110" rx="5" fill="url(#slotMetal)" stroke="#a97d45" stroke-width="4"/><rect x="19" y="19" width="90" height="90" fill="#080808" stroke="#302719" stroke-width="3"/><path d="M18 36L36 18M92 18l18 18M18 92l18 18M110 92l-18 18" stroke="#d0a15a" opacity=".36" stroke-width="3"/></g><g transform="translate(128 0)"><rect x="15" y="15" width="98" height="98" rx="6" fill="#1b130e" stroke="#f2a84b" stroke-width="4"/><path d="M64 20c24 32 17 58-2 88c-19-24-34-49 2-88z" fill="url(#emberBloom)"/><path d="M64 37c8 21 4 38-3 53" stroke="#fff0b8" opacity=".42" stroke-width="4"/></g><g transform="translate(256 0)"><rect x="15" y="15" width="98" height="98" rx="6" fill="#17191a" stroke="#c8bda8" stroke-width="4"/><path d="M34 96l58-64M37 32l55 63" stroke="#d8cfb6" stroke-width="10" stroke-linecap="round"/><path d="M28 88l20 19M81 22l19 18" stroke="#70401f" stroke-width="8" stroke-linecap="round"/></g><g transform="translate(384 0)"><rect x="15" y="15" width="98" height="98" rx="6" fill="#12141a" stroke="#75aee8" stroke-width="4"/><path d="M25 79c25-44 55-58 78-37c-14 33-38 48-78 37z" fill="#75aee8" opacity=".78"/><path d="M37 70c17-13 34-22 53-25" stroke="#e4fbff" stroke-width="3" opacity=".42"/></g><g transform="translate(512 0)"><rect x="15" y="15" width="98" height="98" rx="6" fill="#151a15" stroke="#80b95f" stroke-width="4"/><path d="M64 22l34 16v29c0 22-15 37-34 43c-19-6-34-21-34-43V38z" fill="#80b95f" opacity=".78"/><path d="M64 29v72M37 56h54" stroke="#d7ffd0" opacity=".28" stroke-width="4"/></g>
+</svg>

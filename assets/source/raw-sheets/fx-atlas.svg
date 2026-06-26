@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="128" viewBox="0 0 640 128">
+  <defs>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.6"/></filter>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.8"/></filter>
+    <linearGradient id="slotMetal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6b5738"/><stop offset=".35" stop-color="#181714"/><stop offset="1" stop-color="#030303"/></linearGradient>
+    <radialGradient id="emberBloom"><stop stop-color="#fff2ba"/><stop offset=".28" stop-color="#f3a14b" stop-opacity=".62"/><stop offset="1" stop-color="#d55a28" stop-opacity="0"/></radialGradient>
+    
+  </defs>
+  <rect width="640" height="128" fill="transparent"/>
+  <g transform="translate(0 0)"><circle cx="64" cy="64" r="62" fill="url(#emberBloom)"/></g><g transform="translate(128 0)"><circle cx="46" cy="72" r="8" fill="#f2a84b"/><circle cx="76" cy="43" r="6" fill="#ffd17a"/><circle cx="88" cy="84" r="9" fill="#d95d4d"/><circle cx="38" cy="39" r="4" fill="#fff2ba"/><circle cx="64" cy="64" r="58" fill="url(#emberBloom)" opacity=".12"/></g><g transform="translate(256 0)"><path d="M6 78c31-39 58 23 116-8v43H6z" fill="#6c8997" opacity=".34" filter="url(#soft)"/><path d="M3 54c25-25 50 14 82-11c14-11 30-6 40 2v32H3z" fill="#405d68" opacity=".22" filter="url(#soft)"/></g><g transform="translate(384 0)"><path d="M64 9l10 38l39-10l-31 24l33 23l-40-8l-11 43l-12-43l-39 8l32-23l-31-24l39 10z" fill="#fff1d4" opacity=".92"/><circle cx="64" cy="64" r="51" fill="#f2a84b" opacity=".18" filter="url(#glow)"/></g><g transform="translate(512 0)"><circle cx="64" cy="64" r="32" fill="none" stroke="#f7cf70" stroke-width="8"/><path d="M64 13v27M64 88v27M13 64h27M88 64h27M28 28l19 19M81 81l19 19M100 28L81 47M47 81l-19 19" stroke="#f7cf70" stroke-width="5" stroke-linecap="round"/><circle cx="64" cy="64" r="55" fill="url(#emberBloom)" opacity=".2"/></g>
+</svg>

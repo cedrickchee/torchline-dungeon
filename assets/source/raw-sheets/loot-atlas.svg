@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="128" viewBox="0 0 640 128">
+  <defs>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.6"/></filter>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.8"/></filter>
+    <linearGradient id="slotMetal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6b5738"/><stop offset=".35" stop-color="#181714"/><stop offset="1" stop-color="#030303"/></linearGradient>
+    <radialGradient id="emberBloom"><stop stop-color="#fff2ba"/><stop offset=".28" stop-color="#f3a14b" stop-opacity=".62"/><stop offset="1" stop-color="#d55a28" stop-opacity="0"/></radialGradient>
+    
+  <linearGradient id="potionRed" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff6a55"/><stop offset=".5" stop-color="#b52c2b"/><stop offset="1" stop-color="#3b0808"/></linearGradient>
+  <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f0d8"/><stop offset=".45" stop-color="#7f898a"/><stop offset="1" stop-color="#1d2324"/></linearGradient>
+  <linearGradient id="armor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#87919a"/><stop offset=".5" stop-color="#3d4448"/><stop offset="1" stop-color="#101314"/></linearGradient>
+  <linearGradient id="charm" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b5ffd0"/><stop offset=".48" stop-color="#54bd68"/><stop offset="1" stop-color="#174a23"/></linearGradient>
+  
+  </defs>
+  <rect width="640" height="128" fill="transparent"/>
+  <g transform="translate(0 0)"><ellipse cx="64" cy="102" rx="36" ry="10" fill="#000" opacity=".45"/><circle cx="52" cy="72" r="21" fill="#c8892f" stroke="#f7cf70" stroke-width="5"/><circle cx="74" cy="79" r="19" fill="#d8a744" stroke="#ffdd83" stroke-width="4"/><circle cx="65" cy="61" r="14" fill="#f0bd55" opacity=".9"/><path d="M44 75h54M55 58h28" stroke="#7a4b1e" opacity=".35"/></g><g transform="translate(128 0)"><ellipse cx="64" cy="104" rx="29" ry="9" fill="#000" opacity=".45"/><rect x="49" y="38" width="30" height="56" rx="9" fill="url(#potionRed)" stroke="#f3d8b4" stroke-width="4"/><path d="M55 33h18v-11H55z" fill="#d7c7aa" stroke="#3d3022" stroke-width="2"/><path d="M57 50c12 6 10 20-1 30" stroke="#ffd4c2" opacity=".24" stroke-width="4" fill="none"/></g><g transform="translate(256 0)"><ellipse cx="64" cy="106" rx="39" ry="9" fill="#000" opacity=".45"/><path d="M29 95l54-70l14 13l-60 62z" fill="url(#steel)" stroke="#f7cf70" stroke-width="3"/><path d="M32 78l20 19" stroke="#6b391f" stroke-width="10"/><path d="M82 25l15 13" stroke="#fff1c8" stroke-width="3" opacity=".5"/></g><g transform="translate(384 0)"><ellipse cx="64" cy="106" rx="35" ry="9" fill="#000" opacity=".45"/><path d="M38 44l26-19l27 19l-7 55H45z" fill="url(#armor)" stroke="#d8cfb6" stroke-width="3"/><path d="M46 51h36M49 64h30M51 76h26" stroke="#121416" stroke-width="4"/><path d="M64 25v74" stroke="#cfc8b8" opacity=".22"/></g><g transform="translate(512 0)"><ellipse cx="64" cy="106" rx="32" ry="9" fill="#000" opacity=".45"/><path d="M64 23l25 32l-25 50l-25-50z" fill="url(#charm)" stroke="#d9ffd0" stroke-width="4"/><path d="M64 23v82M41 55h46" stroke="#153d22" opacity=".45" stroke-width="3"/><circle cx="64" cy="64" r="34" fill="#75ff8d" opacity=".12" filter="url(#glow)"/></g>
+</svg>

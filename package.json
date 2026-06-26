@@ -1,0 +1,31 @@
+{
+  "name": "torchline-dungeon",
+  "private": false,
+  "version": "0.1.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "generate:assets": "bun scripts/create-runtime-assets.mjs",
+    "validate:assets": "bun src/assets/validate-manifest.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.3",
+    "@types/three": "^0.184.1",
+    "eslint": "^9.29.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.1",
+    "vite": "^7.0.0",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "three": "^0.184.0"
+  }
+}

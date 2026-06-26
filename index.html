@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>Torchline Dungeon</title>
+  </head>
+  <body>
+    <canvas id="game-canvas" aria-label="Torchline Dungeon canvas game"></canvas>
+
+    <div id="hud" class="hud" aria-live="polite">
+      <section class="panel panel-stats">
+        <div class="portrait-shell">
+          <div class="portrait-glow"></div>
+          <div class="portrait-hood"></div>
+        </div>
+        <h1>Level <span id="level">1</span></h1>
+        <div class="small-label">Ember undercroft · floor <span id="floor">1</span></div>
+
+        <div class="meter-row hp-row">
+          <span>HP</span>
+          <strong id="hp-text">0/0</strong>
+        </div>
+        <div class="meter hp-meter"><div id="hp-fill"></div></div>
+
+        <div class="meter-row xp-row">
+          <span>XP</span>
+          <strong id="xp-text">0/0</strong>
+        </div>
+        <div class="meter xp-meter"><div id="xp-fill"></div></div>
+
+        <div class="meter-row torch-row">
+          <span>Torch</span>
+          <strong id="torch-text">0</strong>
+        </div>
+        <div class="meter torch-meter"><div id="torch-fill"></div></div>
+
+        <div class="stat-list">
+          <div><span>Attack</span><strong id="attack">0</strong></div>
+          <div><span>Defense</span><strong id="defense">0</strong></div>
+          <div><span>Critical</span><strong id="crit">0%</strong></div>
+          <div><span>Gold</span><strong id="gold">0</strong></div>
+        </div>
+
+        <div id="buffs" class="buff-list"></div>
+        <div class="left-emblems" aria-hidden="true">
+          <span data-count="5"></span>
+          <span data-count="3"></span>
+          <span data-count="2"></span>
+          <span data-count="1"></span>
+        </div>
+      </section>
+
+      <aside id="pack-panel" class="panel panel-pack" aria-label="Equipment, inventory, skills, and map">
+        <div class="section-title">Equipment</div>
+        <div id="equipment" class="equipment-grid"></div>
+
+        <div class="section-title">Inventory</div>
+        <div id="inventory" class="inventory-grid"></div>
+
+        <div id="tooltip" class="tooltip" hidden></div>
+
+        <div class="section-title">Skills</div>
+        <div id="skills" class="skill-summary"></div>
+
+        <div class="section-title">Map</div>
+        <canvas id="minimap" width="196" height="156" aria-label="Known dungeon map"></canvas>
+      </aside>
+
+      <section id="messages" class="panel message-log"></section>
+
+      <nav class="panel hotbar" aria-label="Actions">
+        <button id="btn-potion" type="button" title="Drink potion" data-key="Q">Flask</button>
+        <button id="btn-wait" type="button" title="Basic attack" data-key="Shift">Strike</button>
+        <button id="btn-shrine" type="button" title="Ember burst" data-key="Space">Ember</button>
+        <button id="btn-stairs" type="button" title="Use stairs" data-key="4">Descent</button>
+        <button id="btn-save" type="button" title="Save run" data-key="5">Save</button>
+        <button id="btn-load" type="button" title="Load run" data-key="6">Load</button>
+        <button id="btn-pause" type="button" title="Pause" data-key="7">Menu</button>
+        <button id="btn-debug" type="button" title="Runic overlay" data-key="8">Runes</button>
+      </nav>
+
+      <button
+        id="btn-pack"
+        class="mobile-pack-toggle"
+        type="button"
+        title="Inventory and equipment"
+        aria-controls="pack-panel"
+        aria-expanded="false"
+        data-key="I"
+      >
+        Pack
+      </button>
+    </div>
+
+    <div id="skill-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="skill-title">
+      <div class="modal-card">
+        <h2 id="skill-title">Choose a floor skill</h2>
+        <p>The stairwell seals behind you. Pick one upgrade before the next descent.</p>
+        <div id="skill-choices" class="choice-grid"></div>
+      </div>
+    </div>
+
+    <div id="pause-overlay" class="pause-overlay" hidden>
+      <div class="panel pause-card">
+        <h2>Paused</h2>
+        <p>Simulation, replay, buffs, monsters, and effects are frozen.</p>
+        <button id="btn-resume" type="button">Resume</button>
+      </div>
+    </div>
+
+    <div id="death-overlay" class="death-overlay" hidden>
+      <div class="panel death-card">
+        <h2>Your torch gutters out</h2>
+        <p id="death-summary"></p>
+        <button id="btn-death-restart" type="button">Restart run</button>
+      </div>
+    </div>
+
+    <div id="debug-overlay" class="debug-overlay" hidden></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
