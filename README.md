@@ -102,3 +102,7 @@ The north star is not a broad procedural dungeon yet. It is one impressive, play
 - Stable 30 FPS minimum in local Chrome.
 
 Future expansion should grow from this slice only after the core feel, rendering, and performance gates hold.
+
+## License
+
+Dungeon Torch Crawler is released under the MIT License. See [LICENSE](./LICENSE).
