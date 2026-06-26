@@ -3,7 +3,7 @@
 <img
   src="docs/images/gameplay.png"
   alt="Torchlit playtesting screenshot"
-  width="60%"
+  width="80%"
 />
 
 Dungeon Torch Crawler is a fixed-camera torchlit action RPG (ARPG) vertical slice built with Bun, Vite, TypeScript, and Three.js.
